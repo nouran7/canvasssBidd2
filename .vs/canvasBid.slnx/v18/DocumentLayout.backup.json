@@ -1,0 +1,437 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\controller\\artworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\controller\\artworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\watchlistresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\watchlistresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\controller\\bidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\controller\\bidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\controller\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\controller\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\watchlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\watchlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\bidreqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\bidreqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\bidresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\bidresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\createartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\createartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\hubs\\bidhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\hubs\\bidhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\artworks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\artworks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\canvasbid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\canvasbid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\bids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\bids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\artworkstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\artworkstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\artworktags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\artworktags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\tags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\tags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\updateartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\updateartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\viewbids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\viewbids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|c:\\users\\lenovo\\source\\repos\\canvasbid\\canvasbid\\models\\viewartworks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38341A89-EFAB-4EBF-4616-DC96B0542160}|canvasBid\\canvasBid.csproj|solutionrelative:canvasbid\\models\\viewartworks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "watchlistResDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\watchlistResDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\watchlistResDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\watchlistResDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\watchlistResDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T11:01:38.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BidController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\BidController.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Controller\\BidController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\BidController.cs",
+              "RelativeToolTip": "canvasBid\\Controller\\BidController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAuwFsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T05:59:09.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\NotificationController.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Controller\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\NotificationController.cs",
+              "RelativeToolTip": "canvasBid\\Controller\\NotificationController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T19:01:24.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Program.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Program.cs",
+              "RelativeToolTip": "canvasBid\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAF0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:13:35.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Watchlist.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Watchlist.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Watchlist.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Watchlist.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Watchlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T18:31:13.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArtworkController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\ArtworkController.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Controller\\ArtworkController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\ArtworkController.cs",
+              "RelativeToolTip": "canvasBid\\Controller\\ArtworkController.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAUwM4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:19:34.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bidReqDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\bidReqDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\bidReqDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\bidReqDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\bidReqDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T05:58:13.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateArtDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\CreateArtDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\CreateArtDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\CreateArtDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\CreateArtDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:16:18.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\RegisterDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:23:46.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BidHub.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Hubs\\BidHub.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Hubs\\BidHub.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Hubs\\BidHub.cs",
+              "RelativeToolTip": "canvasBid\\Hubs\\BidHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T16:55:59.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "bidResDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\bidResDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\bidResDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\bidResDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\bidResDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T00:22:45.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Data\\dbContext.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Data\\dbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Data\\dbContext.cs",
+              "RelativeToolTip": "canvasBid\\Data\\dbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:52:57.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Artworks.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Artworks.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Artworks.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Artworks.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Artworks.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAzwBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:31:38.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\User.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\User.cs",
+              "RelativeToolTip": "canvasBid\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:39:48.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Notification.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Notification.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:39:12.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ArtworkStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\ArtworkStatus.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\ArtworkStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\ArtworkStatus.cs",
+              "RelativeToolTip": "canvasBid\\Models\\ArtworkStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T01:23:13.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Bids.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Bids.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Bids.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Bids.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Bids.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:36:32.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Controller\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Controller\\AuthController.cs",
+              "RelativeToolTip": "canvasBid\\Controller\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAF4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:48:57.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ArtworkTags.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\ArtworkTags.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\ArtworkTags.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\ArtworkTags.cs",
+              "RelativeToolTip": "canvasBid\\Models\\ArtworkTags.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T15:21:01.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Tags.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Tags.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Tags.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Tags.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Tags.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:34:41.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "canvasBid.csproj",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\canvasBid.csproj",
+              "RelativeDocumentMoniker": "canvasBid\\canvasBid.csproj",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\canvasBid.csproj",
+              "RelativeToolTip": "canvasBid\\canvasBid.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-11T15:22:32.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateArtDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\UpdateArtDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\UpdateArtDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\UpdateArtDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\UpdateArtDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:52:58.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Dtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "canvasBid\\Dtos\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T15:23:13.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\appsettings.json",
+              "RelativeDocumentMoniker": "canvasBid\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\appsettings.json",
+              "RelativeToolTip": "canvasBid\\appsettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAjwAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-11T15:40:08.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Viewbids.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Viewbids.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Viewbids.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Viewbids.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Viewbids.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:40:30.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Viewartworks.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Viewartworks.cs",
+              "RelativeDocumentMoniker": "canvasBid\\Models\\Viewartworks.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\canvasBid\\canvasBid\\Models\\Viewartworks.cs",
+              "RelativeToolTip": "canvasBid\\Models\\Viewartworks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T14:39:55.525Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
