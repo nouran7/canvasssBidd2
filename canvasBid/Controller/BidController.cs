@@ -22,7 +22,7 @@ namespace canvasBid.Controller
             _context = context;
             _hub = hub;
         }
-
+        //place bid on artwork
         [Authorize(Roles = "Buyer")]
         [HttpPost]
         public async Task<IActionResult> PlaceBid(bidReqDto dto)
@@ -35,6 +35,10 @@ namespace canvasBid.Controller
 
             if (artwork == null)
                 return NotFound();
+
+            
+            if (artwork.status != ArtworkStatus.Approved)
+                return BadRequest("Cannot place bid on non-approved artwork.");
 
             var lastBid = artwork.Bids
                 .OrderByDescending(b => b.amount)
@@ -73,7 +77,7 @@ namespace canvasBid.Controller
             return Ok(result);
         }
         //********************************************************************************************************//
-
+        //get the users that bid specific artwork
         [HttpGet("{artworkId}/bids")]
         public IActionResult GetBids(int artworkId)
         {

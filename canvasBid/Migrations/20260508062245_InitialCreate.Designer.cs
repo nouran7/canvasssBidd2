@@ -12,8 +12,8 @@ using canvasBid.Data;
 namespace canvasBid.Migrations
 {
     [DbContext(typeof(dbContext))]
-    [Migration("20260419021658_IntialCreate")]
-    partial class IntialCreate
+    [Migration("20260508062245_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -348,6 +348,9 @@ namespace canvasBid.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -357,9 +360,6 @@ namespace canvasBid.Migrations
 
                     b.Property<string>("name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("status")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -19,6 +19,7 @@ namespace canvasBid.Data
         public DbSet<ArtworkTags> ArtworkTags { get; set; }
         public DbSet<Watchlist> Watchlists { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<Tags> Tags { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

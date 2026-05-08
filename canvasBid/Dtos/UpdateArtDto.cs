@@ -7,6 +7,8 @@
         public decimal? buyNowPrice { get; set; }
         public decimal? intialPrice { get; set; }
         public string? category { get; set; }
-        public byte[]? Image { get; set; }
+        public IFormFile? Image { get; set; }
+        public string artistId { get; set; }
+        public List<string>? Tags { get; set; }
     }
 }

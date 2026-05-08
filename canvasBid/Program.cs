@@ -12,7 +12,12 @@ var builder = WebApplication.CreateBuilder(args);
 // ================= SERVICES =================
 
 // Controllers
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler =
+            System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
 
 // DbContext
 builder.Services.AddDbContext<dbContext>(options =>

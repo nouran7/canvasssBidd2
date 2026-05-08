@@ -3,6 +3,7 @@ using canvasBid.Dtos;
 using canvasBid.Hubs;
 using canvasBid.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.AspNetCore.SignalR;
@@ -16,18 +17,41 @@ namespace canvasBid.Controller
     {
         private readonly dbContext _context;
         private readonly IHubContext<BidHub> _hub;
-        public ArtworkController(dbContext context, IHubContext<BidHub> hub)
+        private readonly UserManager<User> _userManager;
+        public ArtworkController(dbContext context, IHubContext<BidHub> hub, UserManager<User> userManager)
         {
             _context = context;
             _hub = hub;
+            _userManager = userManager;
         }
 
-       //create
-
+        //create
         [Authorize(Roles = "Artist")]
         [HttpPost]
-        public IActionResult Create(CreateArtDto dto)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Create([FromForm] CreateArtDto dto)
         {
+            var artistUser = await _userManager.FindByIdAsync(dto.artistId);
+
+            if (artistUser == null)
+                return NotFound("Artist not found");
+
+            var roles = await _userManager.GetRolesAsync(artistUser);
+            if (!roles.Contains("Artist"))
+                return BadRequest("User is not an Artist");
+
+            if (artistUser.Status != AccountStatus.Approved)
+                return BadRequest("Artist account is not approved yet");
+
+            byte[]? imageBytes = null;
+
+            if (dto.Image != null)
+            {
+                using var ms = new MemoryStream();
+                await dto.Image.CopyToAsync(ms);
+                imageBytes = ms.ToArray();
+            }
+
             var artwork = new Artworks
             {
                 title = dto.title,
@@ -35,33 +59,79 @@ namespace canvasBid.Controller
                 buyNowPrice = dto.buyNowPrice,
                 intialPrice = dto.intialPrice,
                 category = dto.category,
-                Image = dto.Image,
-
-                userId = User.FindFirstValue(ClaimTypes.NameIdentifier),
+                Image = imageBytes,
+                userId = dto.artistId,
                 status = ArtworkStatus.Pending
             };
 
             _context.Artwork.Add(artwork);
             _context.SaveChanges();
 
-            return Ok(artwork);
+            if (dto.Tags != null && dto.Tags.Any())
+            {
+                foreach (var tagName in dto.Tags)
+                {
+                    var tag = new Tags { tag = tagName, ArtworkId = artwork.artworkId };
+                    _context.Tags.Add(tag);
+                    _context.SaveChanges();
+
+                    var artworkTag = new ArtworkTags
+                    {
+                        ArtworkId = artwork.artworkId,
+                        TagId = tag.tagId
+                    };
+                    _context.ArtworkTags.Add(artworkTag);
+                }
+                _context.SaveChanges();
+            }
+
+            var result = _context.Artwork
+                .Include(a => a.ArtworkTags)
+                .ThenInclude(at => at.Tag)
+                .Include(a => a.user)
+                .FirstOrDefault(a => a.artworkId == artwork.artworkId);
+
+            return Ok(new
+            {
+                result.artworkId,
+                result.title,
+                result.discreption,
+                result.buyNowPrice,
+                result.intialPrice,
+                result.category,
+                result.status,
+                artistName = result.user.name,
+                tags = result.ArtworkTags.Select(at => at.Tag.tag).ToList()
+            });
         }
 
         //********************************************************************************************************//
         //update 
         [Authorize(Roles = "Artist")]
         [HttpPut("{id}")]
-        public IActionResult Update(int id, UpdateArtDto dto)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Update(int id, [FromForm] UpdateArtDto dto)
         {
+            var artistUser = await _userManager.FindByIdAsync(dto.artistId);
+
+            if (artistUser == null)
+                return NotFound("Artist not found");
+
+            var roles = await _userManager.GetRolesAsync(artistUser);
+            if (!roles.Contains("Artist"))
+                return BadRequest("User is not an Artist");
+
+            if (artistUser.Status != AccountStatus.Approved)
+                return BadRequest("Artist account is not approved yet");
+
             var artwork = _context.Artwork.Find(id);
 
             if (artwork == null)
-                return NotFound();
+                return NotFound("Artwork not found");
 
-            if (artwork.userId != User.FindFirstValue(ClaimTypes.NameIdentifier))
-                return Unauthorized();
+            if (artwork.userId != dto.artistId)
+                return Unauthorized("You are not the owner of this artwork");
 
-           
             if (dto.title != null)
                 artwork.title = dto.title;
 
@@ -78,13 +148,53 @@ namespace canvasBid.Controller
                 artwork.category = dto.category;
 
             if (dto.Image != null)
-                artwork.Image = dto.Image;
+            {
+                using var ms = new MemoryStream();
+                await dto.Image.CopyToAsync(ms);
+                artwork.Image = ms.ToArray();
+            }
+
+            if (dto.Tags != null && dto.Tags.Any())
+            {
+                var oldTags = _context.ArtworkTags.Where(at => at.ArtworkId == id);
+                _context.ArtworkTags.RemoveRange(oldTags);
+
+                foreach (var tagName in dto.Tags)
+                {
+                    var tag = new Tags { tag = tagName, ArtworkId = artwork.artworkId };
+                    _context.Tags.Add(tag);
+                    _context.SaveChanges();
+
+                    var artworkTag = new ArtworkTags
+                    {
+                        ArtworkId = artwork.artworkId,
+                        TagId = tag.tagId
+                    };
+                    _context.ArtworkTags.Add(artworkTag);
+                }
+            }
 
             artwork.status = ArtworkStatus.Pending;
-
             _context.SaveChanges();
 
-            return Ok(artwork);
+            var result = _context.Artwork
+                .Include(a => a.ArtworkTags)
+                .ThenInclude(at => at.Tag)
+                .Include(a => a.user)
+                .FirstOrDefault(a => a.artworkId == id);
+
+            return Ok(new
+            {
+                result.artworkId,
+                result.title,
+                result.discreption,
+                result.buyNowPrice,
+                result.intialPrice,
+                result.category,
+                result.status,
+                artistName = result.user.name,
+                tags = result.ArtworkTags.Select(at => at.Tag.tag).ToList()
+            });
         }
 
         //**************************************************************************************************************//
@@ -104,6 +214,20 @@ namespace canvasBid.Controller
             _context.SaveChanges();
 
             return Ok();
+        }
+        //********************************************************************************************************//
+        //list as artist 
+        [Authorize(Roles = "Artist")]
+        [HttpGet("my-artworks")]
+        public IActionResult GetMyArtworks()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var artworks = _context.Artwork
+                .Where(a => a.userId == userId)
+                .ToList();
+
+            return Ok(artworks);
         }
         //*******************************************************************************************************************//
         //approve
@@ -136,6 +260,18 @@ namespace canvasBid.Controller
             return Ok("Rejected");
         }
         //************************************************************************************************************************************//
+        //listing artwork without login as buyer s
+        [AllowAnonymous]
+        [HttpGet("all")]
+        public IActionResult GetAllArtworks()
+        {
+            var artworks = _context.Artwork
+                .Where(a => a.status == ArtworkStatus.Approved)
+                .ToList();
+
+            return Ok(artworks);
+        }
+        //********************************************************************************************//
         // listing artworks
         [Authorize(Roles = "Buyer")]
         [HttpGet]
@@ -149,24 +285,35 @@ namespace canvasBid.Controller
         }
         //************************************************************************************************************************************************//
         [HttpGet("filter")]
-        public IActionResult Filter(string? artist, string? category, int? tagId)
+        public IActionResult Filter(string? artist, string? category, string? tag)
         {
             var query = _context.Artwork
                 .Include(a => a.ArtworkTags)
+                .ThenInclude(at => at.Tag)
+                .Include(a => a.user)
                 .Where(a => a.status == ArtworkStatus.Approved);
 
             if (!string.IsNullOrEmpty(artist))
-                query = query.Where(a => a.userId == artist);
+                query = query.Where(a => a.user.name.Contains(artist));
 
             if (!string.IsNullOrEmpty(category))
                 query = query.Where(a => a.category == category);
 
-            
-            if (tagId.HasValue)
+            if (!string.IsNullOrEmpty(tag))
                 query = query.Where(a =>
-                    a.ArtworkTags.Any(at => at.TagId == tagId.Value));
+                    a.ArtworkTags.Any(at => at.Tag.tag.Contains(tag)));
 
-            return Ok(query.ToList());
+            return Ok(query.Select(a => new {
+                a.artworkId,
+                a.title,
+                a.discreption,
+                a.buyNowPrice,
+                a.intialPrice,
+                a.category,
+                a.status,
+                artistName = a.user.name,
+                tags = a.ArtworkTags.Select(at => at.Tag.tag).ToList()
+            }).ToList());
         }
         //*************************************************************************************************************//
 
@@ -175,6 +322,14 @@ namespace canvasBid.Controller
         public IActionResult AddToWatchlist(int artworkId)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var artwork = _context.Artwork.Find(artworkId);
+
+            if (artwork == null)
+                return NotFound("Artwork not found");
+
+            if (artwork.status != ArtworkStatus.Approved)
+                return BadRequest("Artwork is not approved yet");
 
             var exists = _context.Watchlists
                 .Any(x => x.UserId == userId && x.ArtworkId == artworkId);
@@ -191,7 +346,14 @@ namespace canvasBid.Controller
             _context.Watchlists.Add(watch);
             _context.SaveChanges();
 
-            return Ok("Added to watchlist");
+            return Ok(new
+            {
+                message = "Added to watchlist",
+                artwork = new
+                {
+                    artwork.Image
+                }
+            });
         }
         //***********************************************************************************************************//
 
@@ -224,11 +386,14 @@ namespace canvasBid.Controller
             if (artwork == null)
                 return NotFound();
 
+            if (artwork.status != ArtworkStatus.Approved)
+                return BadRequest("Cannot extend auction for non-approved artwork.");
+
             artwork.EndTime = artwork.EndTime.AddMinutes(minutes);
 
             _context.SaveChanges();
             await _hub.Clients.All
-       .SendAsync("AuctionExtended", id, artwork.EndTime);
+                .SendAsync("AuctionExtended", id, artwork.EndTime);
 
             return Ok("Extended");
         }
