@@ -311,6 +311,27 @@ public async Task<IActionResult> Create([FromForm] CreateArtDto dto)
 
             return Ok(artworks);
         }
+        //*****************************************************************************************************************************************//
+        [Authorize(Roles = "Buyer")]
+[HttpDelete("watchlist/{artworkId}")]
+public IActionResult RemoveFromWatchlist(int artworkId)
+{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+    var watch = _context.Watchlists
+        .FirstOrDefault(x => x.UserId == userId && x.ArtworkId == artworkId);
+
+    if (watch == null)
+        return NotFound("Artwork not found in watchlist");
+
+    _context.Watchlists.Remove(watch);
+    _context.SaveChanges();
+
+    return Ok(new
+    {
+        message = "Removed from watchlist"
+    });
+}
         //************************************************************************************************************************************************//
         [HttpGet("filter")]
         public IActionResult Filter(string? artist, string? category, string? tag)
@@ -426,6 +447,20 @@ public async Task<IActionResult> Create([FromForm] CreateArtDto dto)
             return Ok("Extended");
         }
         //*************************************************************************************************************//
+        [HttpGet("tags")]
+         public async Task<IActionResult> GetAllTags()
+       {
+             var tags = await _context.Tags
+             .Select(t => new
+            {
+                 t.tagId,
+                 t.tag
+              })
+            .ToListAsync();
+
+            return Ok(tags);
+         }
+        //************************************************************************************************************//
        //get artwork by id
         [AllowAnonymous]
         [HttpGet("{id}")]
