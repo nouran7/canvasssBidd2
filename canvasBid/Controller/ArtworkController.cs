@@ -399,3 +399,37 @@ namespace canvasBid.Controller
         }
     }
 }
+ //*************************************************************************************************************//
+ //get artwork by id
+ [AllowAnonymous]
+ [HttpGet("{id}")]
+ public IActionResult GetArtworkById(int id)
+ {
+     var artwork = _context.Artwork
+         .Where(a => a.artworkId == id) 
+         .Include(a => a.ArtworkTags)
+         .ThenInclude(at => at.Tag)
+         .Include(a => a.user)
+         .FirstOrDefault();
+
+     if (artwork == null)
+         return NotFound("Artwork not found");
+
+     if (artwork.status != ArtworkStatus.Approved)
+         return BadRequest($"Artwork is {artwork.status}");  
+
+     return Ok(new
+     {
+         artwork.artworkId,
+         artwork.title,
+         artwork.discreption,
+         artwork.buyNowPrice,
+         artwork.intialPrice,
+         artwork.category,
+         artwork.status,
+         artwork.StartTime,
+         artwork.EndTime,
+         artistName = artwork.user.name,
+         tags = artwork.ArtworkTags.Select(at => at.Tag.tag).ToList()
+     });
+ }
