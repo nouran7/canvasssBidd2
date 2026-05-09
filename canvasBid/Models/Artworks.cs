@@ -17,6 +17,7 @@ namespace canvasBid.Models
 
         public string userId { get; set; }
         public User user { get; set; }
+        public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public List<Viewartworks> userView { get; set; }
         public List<ArtworkTags> ArtworkTags { get; set; }
