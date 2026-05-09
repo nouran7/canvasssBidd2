@@ -10,5 +10,7 @@
         public IFormFile? Image { get; set; }
         public List<string>? Tags { get; set; }
         public string artistId { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
     }
 }
